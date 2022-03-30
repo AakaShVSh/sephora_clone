@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/fa650845c0.js" crossorigin="anonymous"></script>
+    <style>
+   
+     #box1{
+         width: 30%;
+         /* border: 1px solid red; */
+         margin: auto;
+     }
+     #box2{
+        width: 30%;
+        /* border: 1px solid red; */
+        margin: auto;
+     }
+     #box3{
+        width: 30%;
+        /* border: 1px solid red; */
+        margin: auto;
+        display: flex;
+     }
+     #box4{
+        width: 30%;
+        /* border: 1px solid red; */
+        margin: auto;
+        
+     }
+     #box40{
+        width: 30%;
+        /* border: 1px solid red; */
+     
+        display: flex;
+     }
+     #box1 > h3,h6{
+         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+     }
+     h6{
+         color: grey;
+     }
+     
+     
+    </style>
+</head>
+<body>
+   
+        <div id="box1" style="text-align: center;">
+            <img src="https://cdn02.nnnow.com/web-images/master/navtree_metaData/59b2425ae4b0d70964ee66e0/1505806763887/12NNNOWLOGODESKTOP.png" alt="">
+            <h3>Checkout Form</h3>
+            <h6>GET THE LATEST NEWS & OFFERS IN BEAUTY & FASHION</h6>
+        </div>
+       
+       
+        <div id="box2">
+            <hr>
+            <h4>Billing Address</h4>
+            <input style="height: 35px; width:40% ; margin-right: 5%;margin-bottom: 5%" type="text" placeholder="First Name">
+            <input style="height: 35px; width:40% ;margin-bottom: 5%;" type="text"  placeholder="Last Name">
+            <input style="height: 35px; width:100% ;margin-bottom: 5%"  type="text" placeholder="Address">
+            <input style="height: 35px; width:28% ;" type="text" placeholder="Country">
+            <input style="height: 35px; width:28% ;" type="text" placeholder="State">
+            <input style="height: 35px; width:28% ;" type="number" placeholder="Pincode">
+             
+            <hr>
+        </div>
+       
+        <div id="box3">
+            <input type="checkbox" placeholder="sele">
+            <p style="margin-top: 0px;">Shipping address is the same address as the Billing address </p>
+        </div>
+       
+        <div id="box4">
+            <hr>
+            <h4>Payment method</h4>
+          <div id="box40">
+              <input type="checkbox">
+              <p style="margin-top: 0px;">PayTm</p>
+          </div>
+          <div id="box40">
+            <input type="checkbox">
+            <p style="margin-top: 0px;">Visa - </p>  <i class="fa fa-cc-visa" style="height: 30px;width: 60px;color: rgb(0,87,159);"></i>
+        </div>
+        <div id="box40">
+            <input type="checkbox">
+            <p style="margin-top: 0px;">PayPal - </p>  <i class="fa fa-cc-paypal" style="height:30px;width: 60px;color: rgb(0,87,159);"></i>
+        </div>
+
+        <div id="box40">
+            <input type="checkbox">
+            <p style="margin-top: 0px;">Amazon Pay - </p>  <i class="fab fa-amazon-pay" style="height: 30px;width: 80px;color: rgb(21,170,191);"></i>
+        </div>
+
+         <div id="can"> 
+            <input style="width: 100%;background-color:rgb(255,51,153) ;color: white;height: 35px;border: 0px;" type="submit" value="CONTINUE">
+            
+         
+        </div>
+       
+        </div>
+        
+</body>
+</html>
+<script>
+    document.getElementById("can").addEventListener("click",function(){
+       
+       
+
+        window.location.href='OTP.html'
+    })
+</script>

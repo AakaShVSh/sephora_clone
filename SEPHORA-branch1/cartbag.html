@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        #bag{
+           width: 100%;
+           height: 50px;
+           background-color: rgb(0,146,223);
+           color: white;
+           text-align: center;
+           
+           
+        }
+       
+        #container{
+            display: flex;
+            width: 100%;
+           
+        }
+        .rightbox{
+            margin-top: 5%;
+            width: 50%;
+          
+           
+        }
+        #leftbox{
+            margin-top: 2%;
+            width: 20%;
+            height: 550px;
+           
+            /* position: fixed; */
+            margin-left: 20%;
+            background-color: rgb(247, 242, 242);
+        }
+        div{
+            /* border: 1px solid red; */
+            width: 80%;
+            /* margin-left: 20%; */
+        }
+        .rightbox >div{
+        /* border: 1px solid red; */
+        margin: 4px;
+        display: flex;
+        margin-left: 40px;
+        
+    }
+    .rightbox >div >p,h3{
+        text-align: center;
+        margin-left: 50%;
+        color: rgb(87, 83, 83);        
+    }
+  
+    
+    button{
+        margin-left: 60%;
+        border: 0px;
+       /* margin-left: 10%; */
+    }
+    button:hover{
+        background-color: rgb(255,51,153);
+    }
+    .rightbox >div >img{
+        height: 150px;
+        
+
+    }
+    div > h4, p {
+        text-align: center;
+    }
+    hr{
+        width: 80%;
+    }
+    
+    
+        
+    </style>
+</head> 
+<body>
+    <h1 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">SEPHORA</h1>
+    <div id="bag" >
+        <p style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;margin-right: 80%;font-size: 20px;margin-top: 5px;">MY BAG</p>
+    </div>
+    <div id="container">
+        <div class="rightbox"></div>
+        <div id="leftbox">
+            <div id="promo" style="width: 100%;height: 40px;display: flex;justify-content: space-evenly;margin-bottom: 25px;">
+                   
+                <img src="https://static.nnnow.com/client/assets/images/promotions/icon_promo.png" alt="">
+                <p>APPLY PROMO CODE</p>
+               
+               </div>
+               <div><input type="text" style="height:20px;margin-left: 50px;"></div>
+               <hr>
+            <div id="d1 ">
+                
+                <h1 style=" margin-left: 5%; font-family: Arial, Helvetica, sans-serif;font-size: 20px;">overview</h1>
+            
+            </div>
+            <div id="subto" style="margin-left: 5%; display: flex;justify-content: space-between;"><p>Subtotal</p> <h5></h5></div>
+            
+            <div id="disc" style="margin-left: 5%; display: flex;justify-content: space-between;color:rgb(255,51,153) ;"><p>Discount</p><p id="disc1"></p></div>
+            <div id="gst" style="margin-left: 5%; display: flex;justify-content: space-between;"><p>GST</p><p>RS.0</p></div>
+            <div id="dilivery" style="margin-left: 5%;display: flex;justify-content: space-between;"><p>Delivery Charges</p><p>RS.49</p></div>
+            <hr>
+            <div id="dilivery" style="margin-left: 5%;display: flex;justify-content: space-between;"><p>Total</p><p id="tol"></p></div>
+
+            <input style="background-color: rgb(255,51,153);width: 100%;height: 35px;font-size: 20px;color: white;border: 0px;" id="checkout" type="submit" value="CHECKOUT">
+            <div  onclick="window.location.href='homepage.html'"><input style="width: 125%;margin-top: 10%;height: 35px;font-size: 15px;" type="button" value="SHOP MORE"></div>
+        </div>
+    </div>
+    
+    
+</body>
+</html>
+
+<script>
+      document.getElementById("checkout").addEventListener("click",function(){
+        window.location.href="checkout.html"
+      })
+
+     var frang=JSON.parse(localStorage.getItem("cartitems")) || [];
+    
+  
+
+     frang.map(function (elem,index) {
+
+
+        var div=document.createElement("div");
+
+        var image=document.createElement("img");
+        image.setAttribute("src",elem.image_url);
+
+        var div1=document.createElement("div");
+        
+        var name=document.createElement("h4");
+        name.textContent=elem.name;
+
+        var brand=document.createElement("p");
+        brand.textContent=elem.Brand;
+
+        var description=document.createElement("p");
+        description.textContent=elem.description;
+
+ 
+
+        var category=document.createElement("p");
+        category.textContent=elem.category;
+
+        var div2 = document.createElement("div");
+       div2.setAttribute("id","flex");
+   
+        var price=document.createElement("h3");
+        price.textContent="Rs."+elem.price;
+        
+       var btn = document.createElement("button");
+       btn.textContent = "REMOVE";
+       btn.addEventListener("click",function(){
+           btntask(index);
+       });
+       
+
+       div2.append(price);
+       div1.append(name,description,category,btn)
+       
+        
+         div.append(image,div1,div2);
+         var hrr = document.createElement("hr");
+
+         document.querySelector(".rightbox").append(div,hrr);
+
+    });
+    var total = frang.reduce(function(acc,cv){
+        return acc+cv.price;
+    },0)
+    document.querySelector("h5").textContent = "Rs."+total;
+
+   document.querySelector("#promo").addEventListener("click",promo);
+   function promo(event){
+       
+   console.log(total);
+    var promo = 250;
+
+    
+       document.querySelector("#disc1").textContent = "Rs."+Math.floor((total*30)/100);
+       var final = total-Math.floor((total*30)/100);
+    
+       document.querySelector("#tol").textContent = "Rs."+final;
+   }
+   
+    var a = total-Math.floor((total*5)/100);
+    console.log(a)
+    
+    
+
+    
+    
+
+    function btntask(index){
+      frang.splice(index,1);
+localStorage.setItem("cartitems",JSON.stringify(frang));
+   
+    }
+
+
+</script>

@@ -1,0 +1,133 @@
+footer{
+    text-align: center;
+    width:100%;
+    margin:auto;
+    font-family:Josefin Sans;
+}
+.top-to-bottom>button{
+    padding:15px;
+    background-color:#A3CB38;
+    border:0px;
+}
+.subscription-container{
+    margin-bottom:5px;
+    margin:10px;
+
+}
+input[type='email'] {
+    padding:10px;
+    background-color:#ecf0f1;
+  
+}
+.subscription-container>#subs{
+    margin-left:-5px;
+    background-color: black;
+    color:white;
+    padding:12px;
+    border:0px;
+}
+.news-letter-container{
+    /* border:1px solid red; */
+    width:100%;
+    background-color:#ecf0f1;
+    padding:10px;
+}
+.footer-docs{
+    width:80%;
+    /* border:1px solid red; */
+    margin:auto;
+    /* padding-right:50px;
+    padding-left:50px; */
+}
+.footer-docs>section>div>h2{
+    font-weight:bold;
+    color:#6c757d;
+}
+.footer-docs>section>div>p{
+  margin-top:-10px;
+}
+.footer-docs>section>h2{
+    font-size:20px;
+    font-weight:bold;
+    color:#343a40;
+}
+.footer-nav-container{
+    display: flex;
+    margin:auto;
+    justify-content:space-around;
+    flex-wrap: wrap;
+    /* border:1px solid red; */
+    width:50%;
+    margin-top:50px;
+}
+.footer-nav-container>a{
+      color:black;
+      text-decoration:none;
+      font-weight:bold;
+}
+.footer-nav-container>a:hover{
+    color:#ef476f;
+}
+.social-media-container{
+  display:flex;
+  justify-content: space-around;
+  /* border:1px solid teal; */
+  align-items: center;
+  width:20%;
+  margin:auto;
+  margin-top:20px;
+  margin-bottom:20px;
+}
+.social-media-container>a>i:hover{
+    color:#ef476f;
+}
+i{
+    color:black;
+}
+.fineprint-container{
+    /* border:1px solid teal; */
+    margin:2px;
+    display:flex;
+    width:25%;
+    justify-content: space-around;
+    margin:auto;
+}
+.fineprint-container span,a:hover{
+         color:#ef476f;
+}
+.fineprint-container>span,a{
+    color:black;
+    text-decoration:none;
+}
+.border-rit{
+    border-right:1px solid grey; 
+}
+.footer-link-container{
+    text-align: center;
+    width:50%;
+    margin:auto;
+    margin-top:20px;
+}
+.footer-link-wrapper{
+    margin-top:20px;
+}
+.footer-link-content{
+    margin:5px;
+}
+
+.footer-link-content>span>a{
+    color:black;
+    border-right:2px groove grey;
+    position: relative;
+    display: inline-block;
+    padding: 0 5px;
+    cursor: pointer;
+    line-height:20px;
+    text-decoration: none;
+}
+.footer-link-content>span>a:hover{
+    color:#ef476f;
+}
+.title{
+    font-weight:bold;
+}

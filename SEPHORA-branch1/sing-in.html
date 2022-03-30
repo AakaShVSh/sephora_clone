@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form{
+            /* border: 1px solid red; */
+            width: 17%;
+            margin: auto;
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+          }
+          form > p,input{
+                     margin-left: 5%;
+                     color: grey;
+                     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                     margin-bottom: 0px;
+                     
+          }
+          h1{
+              text-align: center;
+              font-family: monospace;
+              font-size: 38px;
+             
+          }
+    </style>
+</head>
+<body>
+    
+    <form action="" style="border-radius: 5px;">
+        <h1>CREATE 
+            ACCOUNT
+        </h1>
+        <p>Name*</p>
+        <input style="height: 30px;width: 90%;" type="text" id="name" >
+        <p>Email*</p>
+        <input style="height: 30px;width: 90%;" type="text" id="email" >
+        <p>Password*</p>
+        <input style="height: 30px;width: 90%;" type="password" id="passwrd" >
+        <p>Phone Number*</p>
+        <input style="height: 30px;width: 90%;margin-bottom: 20px;" type="number" id="mobile" >
+        <input style="border-radius: 5px; margin-bottom: 5%; height: 35px;width: 94%; background-color: rgb(255,51,153);color: white;border: 0px; font-size: 18px;" type="submit" value="CONTINUE">
+    </form>
+       
+    
+    
+</body>
+</html>
+<script>
+
+    document.querySelector("form").addEventListener("submit",formsubmit);
+
+    var userstack = JSON.parse(localStorage.getItem("userdata"))||[];
+
+    function formsubmit(event){
+        event.preventDefault();
+
+        var name = document.querySelector("#name").value;
+        var email = document.querySelector("#email").value;
+        var pass = document.querySelector("#passwrd").value;
+        var mobil = document.querySelector("#mobile").value;
+        
+        var userdata = {
+            username:name,
+            useremail:email,
+            userpass:pass,
+            usermobile:mobile
+        }
+        userstack.push(userdata);
+           
+           localStorage.setItem("userdata",JSON.stringify(userstack));
+             alert("Sign-in Successful");
+             window.location.href="login.html";
+        // console.log(name,email,pass,mobil);
+    }
+
+
+</script>
