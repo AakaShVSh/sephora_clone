@@ -6,7 +6,7 @@ Vikrant Raut, Ketan Salve.
 This is our first collab at Masai with each other teammate, so this is the blog of how a team make it done within 4 days and implement what they have learnt in past 8 weeks.
 Our group was assigned to work on cloning of website called Sephora.nnnow
 You might have heard about Sephora The online beauty product store. Sephora is the one-stop for all beauty products admirers. On this website, you can shop for various beauty products like body creams, moisturizers, deodorants etc. you can refer to https://sephora.nnnow.com/
-Technologies we Used
+<li>Technologies we Used</li>
 <li>HTML</li>
 <li>Javascript</li>
 <li>CSS</li>
