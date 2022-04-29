@@ -11,21 +11,25 @@ HTML
 Javascript
 CSS
 You guys might be wondering how one can make such a website using only these limited technologies, but as we have learnt these technologies only and many more to come.
-our product images as followed.
+our product images as followed.<br/>
 
-Homepage.
-<img src = "https://miro.medium.com/max/700/0*aht_DZVcyg244WF-.png"/>
-Dropdown.
+Homepage.<br/>
+<img src = "https://miro.medium.com/max/700/0*aht_DZVcyg244WF-.png"/><br/>
+Dropdown.<br/>
+<img src = "https://miro.medium.com/max/700/0*XUT1yTdCNypCTDwU.png"/><br/>
+login page.<br/>
+<img src = "https://miro.medium.com/max/700/0*LctDFQ47uhpZ95CC.png"/><br/>
+Product page.<br/>
+<img src = "https://miro.medium.com/max/700/0*0RYjIXUah7J_yS-3.png"/></br/>
 
-login page.
+Sorting.<br/>
+<img src = "https://miro.medium.com/max/700/0*1EmKCg_aDwOwEcrY.png"/><br/>
 
-Product page.
+Cart Page.<br/>
+<img src = "https://miro.medium.com/max/700/0*oDpGwAt7DF0-W7c1.png"/> <br/>
 
-Sorting.
-
-Cart Page.
-
-checkout Page.
+checkout Page.<br/>
+<img src = "https://miro.medium.com/max/700/0*JfWrSZLIUJVmeFA5.png"/><br/>
 
 OTP page to confirm the order.
 I hope you like the snippets of our site, but I would like to take you to the part about what are the difficulties we actually face, one of the difficulties is to merge all the data together, and GITHUB was new to all of us, managing that took a lot of time and proper communication helps us to work with each other and I would each member is the team is supportive towards each other. finally there are a scripting that we have used here are taken from the following sites,
