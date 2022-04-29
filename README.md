@@ -14,7 +14,7 @@ You guys might be wondering how one can make such a website using only these lim
 our product images as followed.
 
 Homepage.
-
+<img src = "https://miro.medium.com/max/700/0*aht_DZVcyg244WF-.png"/>
 Dropdown.
 
 login page.
