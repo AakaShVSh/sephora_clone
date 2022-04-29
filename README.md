@@ -8,8 +8,8 @@ Our group was assigned to work on cloning of website called Sephora.nnnow
 You might have heard about Sephora The online beauty product store. Sephora is the one-stop for all beauty products admirers. On this website, you can shop for various beauty products like body creams, moisturizers, deodorants etc. you can refer to https://sephora.nnnow.com/
 Technologies we Used
 <li>HTML</li>
-Javascript
-CSS
+<li>Javascript<li/>
+<li>CSS</li>
 You guys might be wondering how one can make such a website using only these limited technologies, but as we have learnt these technologies only and many more to come.
 our product images as followed.<br/>
 
